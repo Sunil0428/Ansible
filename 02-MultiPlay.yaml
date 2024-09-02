@@ -3,5 +3,5 @@
   tasks: 
    - name: Play 01 Task 01
      ansible.builtin.debug:
-      msg: "This is from play 01 task 01"
+      msg: System {{ inventory_hostname }} has gateway {{ ansible_default_ipv4.gateway }}
      
