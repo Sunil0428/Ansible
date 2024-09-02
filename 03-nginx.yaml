@@ -1,0 +1,11 @@
+- name: Install and run nginx
+  hosts: web
+  tasks:
+    - name: Task 01 Install nginx
+      ansible.builtin.package:
+        name: ntpdate
+        state: 
+    - name: Task 02 Start and Enable nginx
+      ansible.builtin.package:
+        name: ntpdate
+        state: present
