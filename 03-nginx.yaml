@@ -10,4 +10,5 @@
     - name: Task 02 Start and Enable nginx
       ansible.builtin.package:
         name: nginx
-        enabled: true
+        state: started
+        enabled: yes
