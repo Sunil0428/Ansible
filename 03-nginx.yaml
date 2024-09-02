@@ -3,9 +3,10 @@
   tasks:
     - name: Task 01 Install nginx
       ansible.builtin.package:
-        name: ntpdate
-        state: 
+        name: nginx
+        state: present
+
     - name: Task 02 Start and Enable nginx
       ansible.builtin.package:
-        name: ntpdate
-        state: present
+        name: nginx
+        enabled: true
