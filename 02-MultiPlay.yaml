@@ -1,7 +1,16 @@
+#PLAY 01
 - name: Play-01
   hosts: web
   tasks: 
    - name: Play 01 Task 01
+     ansible.builtin.debug:
+      msg: System {{ inventory_hostname }} has gateway {{ ansible_default_ipv4.gateway }}
+
+#PLAY 02
+- name: Play-02
+  hosts: web
+  tasks: 
+   - name: Play 02 Task 01
      ansible.builtin.debug:
       msg: System {{ inventory_hostname }} has gateway {{ ansible_default_ipv4.gateway }}
      
