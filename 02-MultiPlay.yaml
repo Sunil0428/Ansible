@@ -1,5 +1,5 @@
--name: Play-01
- hosts: web
- task: 
- - name: Play 01 Task 01
-   ansible.builtin.debug:
+- name: Play-01
+  hosts: web
+  task: 
+  - name: Play 01 Task 01
+    ansible.builtin.debug:
