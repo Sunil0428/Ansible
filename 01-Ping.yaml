@@ -3,4 +3,3 @@
   tasks:
   - name: ping the server
     ansible.builtin.ping:
-    data: "Hii Helloo"
