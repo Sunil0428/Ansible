@@ -11,8 +11,9 @@
         name: nginx
         state: present
 
-    - name: Task02 Start nginx
+    - name: Task02 Start and enabling nginx
       ansible.builtin.service:
         name: nginx
         state: started
+        enabled: yes
 
