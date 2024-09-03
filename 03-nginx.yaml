@@ -3,16 +3,16 @@
   become: yes
   tasks:
     - name: Ping the node server
-       ansible.builtin.debug:
+      ansible.builtin.debug:
         msg: System {{ inventory_hostname }} has gateway {{ ansible_default_ipv4.gateway }}
 
     - name: Task01 Installing nginx
-       ansible.builtin.package:  
+      ansible.builtin.package:  
         name: nginx
         state: present
 
     - name: Task02 Start nginx
-       ansible.builtin.service:
+      ansible.builtin.service:
         name: nginx
         state: started
 
