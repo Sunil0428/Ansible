@@ -1,0 +1,14 @@
+- name: Sample code for printing Variables
+  hosts: web
+  vars_file:
+  - vars.yaml
+  tasks:
+  - name: T01 Printing a sample message
+    ansible.builtin.debug:
+      msg: "Hi ..I m learning {{COURSE}} with duration {{DURATION}} at trainer {{TRAINER}}"
+
+  - name: T02 Printing a sample message
+    vars:
+      COURSE: "DEVOPS with AWS ---Task level"
+    ansible.builtin.debug:
+      msg: "Hi ..I m learning {{COURSE}} with duration {{DURATION}} at trainer {{TRAINER}}"
