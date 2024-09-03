@@ -1,6 +1,6 @@
 - name: Sample code for printing Variables
   hosts: web
-  vars_file:
+  vars_files:
   - vars.yaml
   tasks:
   - name: T01 Printing a sample message
