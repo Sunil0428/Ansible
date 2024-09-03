@@ -1,14 +1,18 @@
-- name: Install and run nginx
-  become: yes
+- name: Install and enable nginx
   hosts: web
+  become: yes
   tasks:
-    - name: Task 01 Install nginx
-      ansible.builtin.package:
+    - name: Ping the node server
+        ansible.builtin.debug:
+        msg: "Hii ... Hello , connection succeesul"
+
+    - name: Task01 Installing nginx
+       ansible.builtin.package:  
         name: nginx
         state: present
-
-    - name: Task 02 Start and Enable nginx
-      ansible.builtin.service:
+        
+    -name: Task02 Start nginx
+       ansible.builtin.service:
         name: nginx
         state: started
-        enabled: yes
+
