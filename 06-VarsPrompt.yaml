@@ -1,0 +1,13 @@
+- name: Sample code for printing Variables
+  hosts: web
+  vars_prompt:
+    - name: COURSE
+      prompt: "Please enter course:"
+    - name: DURATION
+      prompt: "Please enter duration"
+    - name: TRAINER
+      prompt: "Please enter trainer name"
+  tasks:
+  - name: T01 Printing a sample message
+    ansible.builtin.debug:
+      msg: "Hi ..I m learning {{COURSE}} with duration {{DURATION}} at trainer {{TRAINER}}"
