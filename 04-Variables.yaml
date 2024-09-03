@@ -1,6 +1,10 @@
 - name: Sample code for printing Variables
   hosts: web
+  vars:
+    COURSE= "DEVOPS with AWS"
+    DURATION= "140 hours"
+    TRAINER= "Siva"
   tasks:
   - name: Printing a sample message
     ansible.builtin.debug:
-      msg: "Hi ..I m learnind DevOpsWithAWS with duration 120 days at trainer Siva"
+      msg: "Hi ..I m learning DevOpsWithAWS with duration 120 days at trainer Siva"
