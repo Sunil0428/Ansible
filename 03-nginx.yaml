@@ -10,7 +10,7 @@
        ansible.builtin.package:  
         name: nginx
         state: present
-        
+
     -name: Task02 Start nginx
        ansible.builtin.service:
         name: nginx
