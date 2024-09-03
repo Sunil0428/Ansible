@@ -3,8 +3,8 @@
   become: yes
   tasks:
     - name: Ping the node server
-        ansible.builtin.debug:
-         msg: "Hii ... Hello , connection succeesul"
+       ansible.builtin.debug:
+          msg: "Hii ... Hello , connection succeesul"
 
     - name: Task01 Installing nginx
        ansible.builtin.package:  
