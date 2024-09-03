@@ -1,0 +1,6 @@
+- name: Sample code for printing Variables
+  hosts: web
+  tasks:
+  - name: T01 Printing Varibles from Inventory file
+    ansible.builtin.debug:
+      msg: "Hi ..I m learning {{COURSE}} with duration {{DURATION}} at trainer {{TRAINER}}"
